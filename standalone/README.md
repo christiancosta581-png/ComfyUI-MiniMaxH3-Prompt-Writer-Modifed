@@ -6,14 +6,24 @@ Current Standalone version: **0.1.10**
 
 [Download H3 Prompt Writer Standalone v0.1.10](../../../releases/download/standalone-v0.1.10/H3-Prompt-Writer-Standalone-Windows-v0.1.10.zip)
 
+## Automatic scene reference selection
+
+This customized build adds **Auto-select scene references** to the Reference media
+panel. It analyses all uploaded images once, compares their descriptions with the
+current Creative Brief, and sends only the selected images to H3 prompt generation.
+You can review and manually change the selection; unused uploads stay in the media
+library. Video/audio references are preserved. See
+[Auto-select reference guide](docs/AUTO_SELECT_REFERENCES.md) for model requirements,
+cache behavior, and current limitations.
+
 ## This is the Standalone version
 
-[Sequence mode](../docs/USAGE.md#sequence) writes several standalone Official H3 or Compact descriptive prompts from one brief. Set chunk durations, assign First, Last, or Reference media, then generate and refine each part.
+[Sequence mode](upstream/docs/USAGE.md#sequence) writes several standalone Official H3 or Compact descriptive prompts from one brief. Set chunk durations, assign First, Last, or Reference media, then generate and refine each part.
 
 You do not need ComfyUI. Do not install this ZIP into ComfyUI `custom_nodes`.
 
 Looking for the ComfyUI extension? See
-[H3 Prompt Writer for ComfyUI](../README.md).
+[H3 Prompt Writer for ComfyUI](upstream/README.md).
 
 - ✓ Ollama
 - ✓ API providers
@@ -90,7 +100,7 @@ Python 3.10 or newer is required. The Linux launcher has been tested on WSL2.
 
 Start Standalone with `start.bat` first; the installed app needs the local server running at the same address.
 
-See [Sequence usage](../docs/USAGE.md#sequence) for media scope, refinement, and limitations. Media Composer, Media Editor, themes, and provider settings remain available.
+See [Sequence usage](upstream/docs/USAGE.md#sequence) for media scope, refinement, and limitations. Media Composer, Media Editor, themes, and provider settings remain available.
 
 Open a media card to edit it. In Reference mode, use **Actions → Compose** to create
 a collage from existing Pictures and video sheets. Editing does not overwrite your

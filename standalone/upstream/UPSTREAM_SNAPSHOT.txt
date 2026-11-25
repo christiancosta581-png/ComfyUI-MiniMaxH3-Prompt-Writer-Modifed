@@ -1,0 +1,6 @@
+H3 Prompt Writer core snapshot
+repository_commit=47514b86c573167f5d0cae2b9d5184c009e332e1
+dirty=true
+local_patch=Shot Workspace-inspired scene-based image reference selection for Single Reference mode
+extension_version=0.4.8
+standalone_version=0.1.10
